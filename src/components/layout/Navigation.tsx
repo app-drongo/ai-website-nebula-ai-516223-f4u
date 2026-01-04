@@ -40,29 +40,15 @@ export default function Navigation(props: NavigationProps) {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center">
             <Image
-              src="https://pub-60de11c8c43b49ea9bd786eb6273aa91.r2.dev/639f3a0ad5b1182948adb5e4507ccb49.svg"
-              alt="Webline.ai Logo"
+              src="https://pub-60de11c8c43b49ea9bd786eb6273aa91.r2.dev/b6f7477e702c4219aa1ef214c281ad13.svg"
+              alt="Logo"
               width={140}
               height={40}
-              className="h-8 md:h-10 w-auto object-contain"
+              className="h-10 md:h-12 w-auto object-contain"
               data-editable-src="logoSrc"
             />
-            <div className="flex flex-col">
-              <span
-                className="font-bold text-xl bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"
-                data-editable="brandName"
-              >
-                {config.brandName}
-              </span>
-              <span
-                className="text-xs text-muted-foreground hidden sm:block"
-                data-editable="tagline"
-              >
-                {config.tagline}
-              </span>
-            </div>
           </div>
 
           {/* Desktop Navigation */}
@@ -112,21 +98,15 @@ export default function Navigation(props: NavigationProps) {
                 <div className="flex flex-col h-full">
                   {/* Mobile Header */}
                   <div className="flex items-center justify-between pb-6 border-b border-border">
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center">
                       <Image
-                        src="https://pub-60de11c8c43b49ea9bd786eb6273aa91.r2.dev/639f3a0ad5b1182948adb5e4507ccb49.svg"
-                        alt="Webline.ai Logo"
+                        src="https://pub-60de11c8c43b49ea9bd786eb6273aa91.r2.dev/b6f7477e702c4219aa1ef214c281ad13.svg"
+                        alt="Logo"
                         width={120}
                         height={32}
-                        className="h-6 md:h-8 w-auto object-contain"
+                        className="h-8 md:h-10 w-auto object-contain"
                         data-editable-src="logoSrc"
                       />
-                      <span
-                        className="font-bold text-lg bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"
-                        data-editable="brandName"
-                      >
-                        {config.brandName}
-                      </span>
                     </div>
                   </div>
 
