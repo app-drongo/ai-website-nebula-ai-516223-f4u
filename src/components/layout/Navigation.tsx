@@ -42,7 +42,7 @@ export default function Navigation(props: NavigationProps) {
           {/* Logo */}
           <div className="flex items-center">
             <Image
-              src="https://pub-60de11c8c43b49ea9bd786eb6273aa91.r2.dev/2cb0049a7e062d5789536dbecc4d9a3c.svg"
+              src="https://pub-60de11c8c43b49ea9bd786eb6273aa91.r2.dev/695ab9b7863a599dcee1b00f/6bb0c0a19dc122b6ffc2a1701f237bbd.png"
               alt="Logo"
               width={140}
               height={40}
@@ -100,7 +100,7 @@ export default function Navigation(props: NavigationProps) {
                   <div className="flex items-center justify-between pb-6 border-b border-border">
                     <div className="flex items-center">
                       <Image
-                        src="https://pub-60de11c8c43b49ea9bd786eb6273aa91.r2.dev/2cb0049a7e062d5789536dbecc4d9a3c.svg"
+                        src="https://pub-60de11c8c43b49ea9bd786eb6273aa91.r2.dev/695ab9b7863a599dcee1b00f/6bb0c0a19dc122b6ffc2a1701f237bbd.png"
                         alt="Logo"
                         width={120}
                         height={32}
