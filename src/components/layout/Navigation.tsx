@@ -5,10 +5,11 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, X, Zap, Sparkles, Brain } from 'lucide-react';
 import { useState } from 'react';
 import { useSmartNavigation } from '@/hooks/useSmartNavigation';
+import Image from 'next/image';
 
 const DEFAULT_NAVIGATION = {
-  brandName: 'Nebula AI',
-  tagline: 'Next-generation AI that transforms ideas into reality',
+  brandName: 'Webline.ai',
+  tagline: 'AI-Powered Web Solutions',
   ctaText: 'Get Started',
   ctaHref: '/start',
   navItems: [
@@ -40,12 +41,14 @@ export default function Navigation(props: NavigationProps) {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="relative">
-              <div className="absolute inset-0 bg-primary/20 blur-lg rounded-full"></div>
-              <div className="relative bg-gradient-to-br from-primary to-accent p-2 rounded-lg">
-                <Brain className="h-6 w-6 text-primary-foreground" />
-              </div>
-            </div>
+            <Image
+              src="https://pub-60de11c8c43b49ea9bd786eb6273aa91.r2.dev/639f3a0ad5b1182948adb5e4507ccb49.svg"
+              alt="Webline.ai Logo"
+              width={140}
+              height={40}
+              className="h-8 md:h-10 w-auto object-contain"
+              data-editable-src="logoSrc"
+            />
             <div className="flex flex-col">
               <span
                 className="font-bold text-xl bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"
@@ -110,12 +113,14 @@ export default function Navigation(props: NavigationProps) {
                   {/* Mobile Header */}
                   <div className="flex items-center justify-between pb-6 border-b border-border">
                     <div className="flex items-center gap-3">
-                      <div className="relative">
-                        <div className="absolute inset-0 bg-primary/20 blur-lg rounded-full"></div>
-                        <div className="relative bg-gradient-to-br from-primary to-accent p-2 rounded-lg">
-                          <Brain className="h-5 w-5 text-primary-foreground" />
-                        </div>
-                      </div>
+                      <Image
+                        src="https://pub-60de11c8c43b49ea9bd786eb6273aa91.r2.dev/639f3a0ad5b1182948adb5e4507ccb49.svg"
+                        alt="Webline.ai Logo"
+                        width={120}
+                        height={32}
+                        className="h-6 md:h-8 w-auto object-contain"
+                        data-editable-src="logoSrc"
+                      />
                       <span
                         className="font-bold text-lg bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"
                         data-editable="brandName"
